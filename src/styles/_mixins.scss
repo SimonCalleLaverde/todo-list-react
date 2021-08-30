@@ -1,0 +1,145 @@
+//----------------------------------Mixins Styles----------------------------------//
+
+// Background Size Mixin
+@mixin background-size($size) {
+  -webkit-background-size:$size;
+     -moz-background-size:$size;
+      -ms-background-size:$size;
+       -o-background-size:$size;
+          background-size:$size;
+}
+
+// Border Radius Mixin
+@mixin border-radius($radius) {
+  -webkit-border-radius:$radius;
+     -moz-border-radius:$radius;
+      -ms-border-radius:$radius;
+       -o-border-radius:$radius;
+          border-radius:$radius;
+}
+
+// Border Top Right Radius Mixin (Corner)
+@mixin border-top-right-radius($top-right-radius) {
+  -webkit-border-top-right-radius:$top-right-radius;
+     -moz-border-top-right-radius:$top-right-radius;
+      -ms-border-top-right-radius:$top-right-radius;
+       -o-border-top-right-radius:$top-right-radius;
+          border-top-right-radius:$top-right-radius;
+}
+
+// Border Top Left Radius Mixin (Corner)
+@mixin border-top-left-radius($top-left-radius) {
+  -webkit-border-top-left-radius:$top-left-radius;
+     -moz-border-top-left-radius:$top-left-radius;
+      -ms-border-top-left-radius:$top-left-radius;
+       -o-border-top-left-radius:$top-left-radius;
+          border-top-left-radius:$top-left-radius;
+}
+
+// Border Bottom Right Radius Mixin (Corner)
+@mixin border-bottom-right-radius($bottom-right-radius) {
+  -webkit-border-bottom-right-radius:$bottom-right-radius;
+     -moz-border-bottom-right-radius:$bottom-right-radius;
+      -ms-border-bottom-right-radius:$bottom-right-radius;
+       -o-border-bottom-right-radius:$bottom-right-radius;
+          border-bottom-right-radius:$bottom-right-radius;
+}
+
+// Border Bottom Left Radius Mixin (Corner)
+@mixin border-bottom-left-radius($bottom-left-radius) {
+  -webkit-border-bottom-left-radius:$bottom-left-radius;
+     -moz-border-bottom-left-radius:$bottom-left-radius;
+      -ms-border-bottom-left-radius:$bottom-left-radius;
+       -o-border-bottom-left-radius:$bottom-left-radius;
+          border-bottom-left-radius:$bottom-left-radius;
+}
+
+// Transform Mixin
+@mixin transform($transform) {
+  -webkit-transform:$transform;
+     -moz-transform:$transform;
+      -ms-transform:$transform;
+       -o-transform:$transform;
+          transform:$transform;
+}
+
+// Transform Origin Mixin
+@mixin transform-origin($transform-origin) {
+  -webkit-transform-origin:$transform-origin;
+     -moz-transform-origin:$transform-origin;
+      -ms-transform-origin:$transform-origin;
+       -o-transform-origin:$transform-origin;
+          transform-origin:$transform-origin;
+}
+
+// Transition Mixin
+@mixin transition($transition...) {
+  -webkit-transition:$transition;
+     -moz-transition:$transition;
+      -ms-transition:$transition;
+       -o-transition:$transition;
+          transition:$transition;
+}
+
+// Transition Delay Mixin
+@mixin transition-delay($delay) {
+  -webkit-transition:$delay;
+     -moz-transition:$delay;
+      -ms-transition:$delay;
+       -o-transition:$delay;
+          transition:$delay;
+}
+
+// Filter Mixin
+@mixin filter($filter...) {
+  -webkit-filter:$filter;
+     -moz-filter:$filter;
+      -ms-filter:$filter;
+       -o-filter:$filter;
+          filter:$filter;
+}
+
+// Backdrop Filter Mixin
+@mixin backdrop-filter($backdrop-filter...) {
+  -webkit-backdrop-filter:$backdrop-filter;
+     -moz-backdrop-filter:$backdrop-filter;
+      -ms-backdrop-filter:$backdrop-filter;
+       -o-backdrop-filter:$backdrop-filter;
+          backdrop-filter:$backdrop-filter;
+}
+
+// Box Shadow Mixin
+@mixin box-shadow($box-shadow...) {
+  -webkit-box-shadow:$box-shadow;
+     -moz-box-shadow:$box-shadow;
+      -ms-box-shadow:$box-shadow;
+       -o-box-shadow:$box-shadow;
+          box-shadow:$box-shadow;
+}
+
+// Text Shadow Mixin
+@mixin text-shadow($text-shadow...) {
+  -webkit-text-shadow:$text-shadow;
+     -moz-text-shadow:$text-shadow;
+      -ms-text-shadow:$text-shadow;
+       -o-text-shadow:$text-shadow;
+          text-shadow:$text-shadow;
+}
+
+// Animation Mixin
+@mixin animation($animation...) {
+  -webkit-animation:$animation;
+     -moz-animation:$animation;
+      -ms-animation:$animation;
+       -o-animation:$animation;
+          animation:$animation;
+}
+
+// Clip Path Mixin
+@mixin clip-path($clip-path...) {
+  -webkit-clip-path:$clip-path;
+     -moz-clip-path:$clip-path;
+      -ms-clip-path:$clip-path;
+       -o-clip-path:$clip-path;
+          clip-path:$clip-path;
+}

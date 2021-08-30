@@ -1,0 +1,49 @@
+// Font Face
+$FontsPath:"./fonts/";//https://s3.amazonaws.com/some-project/uploads
+
+@font-face {
+	font-family:"Aileron Regular";
+	src:url("#{$FontsPath}/Aileron-Regular.otf") format("opentype");
+	//font-weight:normal;//Each "Aileron" Font Brings Its Weight
+	//font-style:normal;//Each "Aileron" Font Brings Its Style
+}
+
+@font-face {
+	font-family:"Aileron Regular Italic";
+	src:url("#{$FontsPath}/Aileron-Italic.otf") format("opentype");
+}
+
+@font-face {
+	font-family:"Aileron Light";
+	src:url("#{$FontsPath}/Aileron-Light.otf") format("opentype");
+}
+
+@font-face {
+	font-family:"Aileron Light Italic";
+	src:url("#{$FontsPath}/Aileron-LightItalic.otf") format("opentype");
+}
+
+@font-face {
+	font-family:"Aileron Ultra Light";
+	src:url("#{$FontsPath}/Aileron-UltraLight.otf") format("opentype");
+}
+
+@font-face {
+	font-family:"Aileron Ultra Light Italic";
+	src:url("#{$FontsPath}/Aileron-UltraLightItalic.otf") format("opentype");
+}
+
+// Font Headline
+$font-headline:"Saol Display Regular",serif;
+
+// Font Regular & Regular Italic
+$font-regular:"Aileron Regular",sans-serif;
+$font-regular-italic:"Aileron Regular Italic",sans-serif;
+
+// Font Light & Light Italic
+$font-light:"Aileron Light",sans-serif;
+$font-light-italic:"Aileron Light Italic",sans-serif;
+
+// Font Ultra Light & Font Ultra Light Italic
+$font-ultra-light:"Aileron Ultra Light",sans-serif;
+$font-ultra-light-italic:"Aileron Ultra Light Italic",sans-serif;

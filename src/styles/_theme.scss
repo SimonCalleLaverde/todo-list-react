@@ -1,0 +1,372 @@
+//----------------------------------General Styles----------------------------------//
+
+// General
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html {
+  background-color:$theme-color-beige;//theme-color('beige')//In Case, While Loading
+  text-rendering:optimizeLegibility;//geometricPrecision
+  font-smooth:always;//
+  -webkit-font-smoothing:subpixel-antialiased;//antialiased
+  -moz-osx-font-smoothing:grayscale;
+}
+body {
+  min-height:100vh;
+  font-family:$font-light;
+  font-size:17px;
+  background-color:$theme-color-beige;//theme-color('beige')//#C0A79E//#C00C00
+  color:#1A1A1A;//#FFF
+  line-height:1.8;
+  letter-spacing:0.5px;
+  .text-italic {
+    font-family:$font-light-italic!important;
+  }
+}
+
+// Fonts
+h1, h2, h3, h4, h5, h6, .font-headline {
+  letter-spacing:0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family:$font-headline;
+}
+.font-headline {
+  font-family:$font-headline!important;
+}
+.font-regular {
+  font-family:$font-regular!important;
+  &.text-italic {//, .text-italic
+    font-family:$font-regular-italic!important;
+  }
+}
+.font-light {
+  font-family:$font-light!important;
+  &.text-italic {//, .text-italic
+    font-family:$font-light-italic!important;
+  }
+}
+.font-ultra-light {
+  font-family:$font-ultra-light!important;
+  &.text-italic {//, .text-italic
+    font-family:$font-ultra-light-italic!important;
+  }
+}
+
+// Utility Classes
+.position-relative {
+  position:relative;
+}
+.position-absolute {
+  position:absolute;
+}
+.position-fixed {
+  position:fixed;
+}
+.display-block {
+  display:block;
+}
+.display-inline-block {
+  display:inline-block;
+}
+.text-bold {
+  font-weight:bold;
+}
+.text-500 {
+  font-weight:500;
+}
+.text-lighter {
+  font-weight:lighter;
+}
+.text-transform-none {
+  text-transform:none;
+}
+.text-underline {
+  text-decoration:underline;
+}
+.text-uppercase {
+  text-transform:uppercase;
+}
+.text-lowercase {
+  text-transform:lowercase;
+}
+.text-capitalize {
+  text-transform:capitalize;
+}
+
+// Flexbox Better Support
+.display-flex {//display:flex
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:-webkit-flex;//
+  display:flex;
+}
+.flex-direction-row {//flex-direction:row
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:row;
+  flex-direction:row;
+}
+.flex-direction-column {//flex-direction:column
+  //Missing
+}
+.justify-content-center {//justify-content:center
+  -webkit-box-pack:center;
+  -ms-flex-pack:center;
+  -webkit-justify-content:center;//
+  justify-content:center;
+}
+.align-items-center {//align-items:center
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;//
+  align-items:center;
+}
+
+// Headline, Title, Subtitle
+.headline, .title, .subtitle {
+}
+.text-huge {
+  font-size:2.85rem;
+  line-height:1.02;
+}
+@media only screen and (max-width:576px) {//Down
+  .text-huge {
+    font-size:2.5rem;
+  }
+}
+@media only screen and (max-width:400px) {//Down
+  .text-huge {
+    font-size:1.6rem;
+  }
+}
+
+// Buttons
+button {
+  cursor:pointer;
+  //line-height:30.6px;
+}
+
+// Input Placeholders
+::-webkit-input-placeholder {
+  font-family:$font-ultra-light;
+  font-size:20px;
+  color:$theme-color-chocolate;//!important
+}
+:-moz-placeholder {//Firefox 18-
+  font-family:$font-ultra-light;
+  font-size:20px;
+  color:$theme-color-chocolate;//!important
+}
+::-moz-placeholder {//Firefox 19+
+  font-family:$font-ultra-light;
+  font-size:20px;
+  color:$theme-color-chocolate;//!important
+}
+:-ms-input-placeholder {
+  font-family:$font-ultra-light;
+  font-size:20px;
+  color:$theme-color-chocolate;//!important
+}
+
+// Selection Styles
+::selection {//webkit, opera, IE9
+  background-color:rgba(105,169,179,0.7);//Or rgba(37,175,206,0.7) Terminal's
+}
+::-moz-selection {//mozilla firefox
+  background-color:rgba(105,169,179,0.7);//Or rgba(37,175,206,0.7) Terminal's
+}
+
+//----------------------------------Section Styles----------------------------------//
+
+// Header
+header {
+  padding:48px 25px 38px;
+  text-align:center;
+  h1, h2, h3, h4, h5, h6 {
+    display:inline-block;
+  }
+  .display-flex {//row
+    .intro {
+      margin:56px 25px 10px;
+      width:50%;
+    }
+  }
+}
+
+// Form Section
+section.form-section {
+  //min-height:100vh;
+  form {
+    width:49%;
+    input.todo-input, button.todo-button {
+      height:60px;
+      padding:0.5rem 20px;
+      background-color:transparent;
+      border:1px solid $theme-color-grey-dark;
+    }
+    input.todo-input {
+      width:78%;
+      font-family:$font-light;
+      font-size:20px;
+      color:$theme-color-chocolate;
+      border-right:none;
+    }
+    button.todo-button {
+      width:22%;//min-width:70px
+      font-size:2.2rem;//Gives some "line-height" space, to center it vertically
+      color:$theme-color-aqua;
+      line-height:1.1;
+      @include transition(all ease-in-out 0.5s);
+      > i.fas {
+        font-size:1.7rem;
+        pointer-events:none;
+        @include transform(translateY(-1px))
+      }
+
+
+
+
+
+
+      &:hover, &:active, &:focus {
+        background-color:$theme-color-grey-light;
+        color:$theme-color-cherry;
+        border-color:$theme-color-grey-light;
+      }
+
+
+
+
+
+    }
+    div.todos-select {//.form-group
+      position:relative;
+      margin:1rem;
+      margin-right:0;
+      //overflow:hidden;
+      &::after {
+        content:"\25BC";//Carret
+        position:absolute;
+        padding:1.1rem 1rem 0.6rem;
+        top:0;
+        right:0;
+        bottom:0;
+        background-color:$theme-color-aqua;
+        color:$theme-color-beige;
+        pointer-events:none;
+        @include transition(all ease-in-out 0.5s)
+      }
+      > select {
+        width:182px;//10rem
+        height:60px;
+        padding:1rem 1rem 0.7rem;
+
+
+        font-size:17px;
+
+
+        color:$theme-color-aqua;
+        border:none;
+        outline:none;
+        -webkit-appearance:none;//Create mixin?
+        -moz-appearance:none;//Create mixin?
+        appearance:none;//Create mixin?
+        cursor:pointer;
+        //@include box-shadow(none);
+        > option {
+        }
+      }
+      &:hover {
+        &::after {
+          background-color:$theme-color-cherry;
+          color:$theme-color-beige;
+        }
+      }
+    }
+
+
+
+
+
+
+  }
+}
+
+// Todo List Section
+section.todo-list-section {
+  padding-bottom:100px;
+  div.todos-container {
+    width:49%;//
+    ul.todos-ul {
+      // width:100%;
+      //padding-left:0;
+      //list-style-type:none;
+      div.todo {
+        display:flex;//Missing Prefixes
+        flex-direction:row;//Missing Prefixes
+        //justify-content:space-between;//Missing Prefixes
+        align-items:stretch;//center//Missing Prefixes
+
+
+
+
+
+        margin:0.4rem 0;
+        font-size:1.5rem;
+        @include transition(all ease-in-out 0.5s);
+        // &.completed {
+        //   text-decoration:line-through;
+        //   @include filter(opacity(0.5));
+        // }
+        &.fall {
+          @include filter(opacity(0));
+          @include transform(translateY(8rem) rotateZ(20deg));
+        }
+        li.todo-item {
+          display:flex;//Missing Prefixes
+          flex-direction:row;//Missing Prefixes
+          align-items:center;//Missing Prefixes
+          flex:1;//Pushes Buttons To The Right
+          height:65.5px;
+          padding:0 1rem;
+          background-color:#FFF;
+          color:$theme-color-aqua;
+          text-align:left;
+          @include transition(all ease-in-out 0.5s);
+
+
+
+
+
+
+          &.completed {
+            text-decoration:line-through;
+            @include filter(opacity(0.5));
+          }
+        }
+        button.btn-complete, button.btn-delete {
+          width:11%;
+          //min-width:3rem;//
+          padding:0.7rem;
+          background-color:orange;
+          border:none;
+          > i.fas {
+            font-size:1.2rem;
+            color:$theme-color-aqua;
+            pointer-events:none;
+            //@include transform(translateY(-2px));
+          }
+        }
+        button.btn-complete {
+          background-color:$theme-color-aqua;
+          > i.fas {
+            color:#FFF;
+          }
+        }
+      }
+    }
+  }
+}

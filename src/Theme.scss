@@ -1,0 +1,71 @@
+//----------------------------------Brand Colours----------------------------------//
+
+// Grey Colours
+$theme-color-grey-dark:#1A1A1A;//rgba(26,26,26,1)
+$theme-color-grey-mid:darken(#CCC,5);
+$theme-color-grey-light:#FEFEFE;//rgba(254,254,254,1)
+
+// Brand Colours
+$theme-color-beige:lighten(#B89C92,4);//Beige Background
+$theme-color-chocolate:#231F20;//Chocolate Highlights
+$theme-color-rosybrown:lighten(#FFE8E4,1);//Rosybrown Texts
+$theme-color-redish:#B36F68;//Redish Some Parts
+$theme-color-blue:#69A9B3;//Blue Highlights
+$theme-color-aqua:#004743;//Nice Aqua
+$theme-color-cherry:#CE1352;//Cherry Hire Button
+$theme-color-azalea:rgba(248,198,198,1);//Azalea
+
+//----------------------------------Mapping Colours----------------------------------//
+
+// // https://brandcolors.net/
+// $theme-colors: (
+//   "facebook":#3B5998,//Facebook Official
+//   "instagram":#E1306C,//Instagram Official
+//   "pinterest":#BD081C,//Pinterest Official
+//   "youtube":#FF0000,//Youtube Official
+//   "twitter":#1DA1F2,//Twitter Official
+//   "google-plus":#DD4B39,//Google Plus Official
+//   "linkedin":#8D6CAB,//LinkedIn Official//Or #0077B5
+//   "behance":#1769FF,//Behance Official
+//   "paypal":#003087,//PayPal Official
+//   "bootstrap":#563D7C,
+//   "jekyll":#FFCC00,
+//   "forestry":#20C997,
+  
+//   "black":#000000,
+//   "white":#FFFFFF,
+
+//   "grey-dark":$theme-color-grey-dark,
+//   "grey-mid":$theme-color-grey-mid,
+//   "grey-light":$theme-color-grey-light,
+
+//   "beige":$theme-color-beige,
+//   "chocolate":$theme-color-chocolate,
+//   "rosybrown":$theme-color-rosybrown,
+  
+//   "redish":$theme-color-redish,
+//   "blue":$theme-color-blue,
+//   "aqua":$theme-color-aqua,
+//   "cherry":$theme-color-cherry,
+//   "azalea":$theme-color-azalea
+// );
+
+//----------------------------------Base Styles----------------------------------//
+
+// Mixins Styles
+@import "styles/mixins";
+
+// Fonts Styles
+@import "styles/fonts";
+
+//----------------------------------Extra Styles----------------------------------//
+
+//----------------------------------Plugins Styles----------------------------------//
+
+//----------------------------------Custom Styles----------------------------------//
+
+// Theme (Mobile & General) Styles
+@import "styles/theme";
+
+// Tablet & Desktop Styles
+@import "styles/tablet_and_desktop";
